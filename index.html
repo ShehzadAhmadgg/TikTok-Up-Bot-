@@ -3,20 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zefoy Controller</title>
-    <script>
-        function openZefoy() {
-            let newWindow = window.open("https://zefoy.com", "_blank");
-            if (newWindow) {
-                newWindow.focus();
-            } else {
-                alert("Pop-up Blocker ko disable karein!");
-            }
-        }
-    </script>
+    <title>Like4Like Automation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Zefoy Automation</h1>
-    <button onclick="openZefoy()">Open Zefoy</button>
+    <h1>Like4Like Automation Task Claimer</h1>
+    <form id="claimForm">
+        <label for="taskId">Task ID:</label>
+        <input type="text" id="taskId" name="taskId" required>
+        <button type="submit">Claim Task</button>
+    </form>
+    <script src="script.js"></script>
 </body>
-</html>
+    </html>
